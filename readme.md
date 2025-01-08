@@ -84,17 +84,17 @@ Before running the tests, ensure that you have the following installed:
 
 cypress/
 ├── e2e/
-│ ├── login.cy.js # Test file (for login)
-│ ├── pointsBalance.cy.js # Test file (for points balance)
+│   ├── login.cy.js # Test file (for login)
+│   ├── pointsBalance.cy.js # Test file (for points balance)
 │
 ├── support/
-│ ├── commands.js # Custom Cypress commands (if needed)
-│ ├── e2e.js # Plugin configurations
+│   ├── commands.js # Custom Cypress commands (if needed)
+│   ├── e2e.js # Plugin configurations
 │
 ├── pages/
-│ ├── loginPage.js # Login Page Object
-│ ├── homePage.js # HomePage Object
-│ ├── dashboardPage.js # Dashboard Page Object
+│   ├── loginPage.js # Login Page Object
+│   ├── homePage.js # HomePage Object
+│   ├── dashboardPage.js # Dashboard Page Object
 │
 cypress.config.js # Cypress configuration file
 cypress.env.json # environment variables

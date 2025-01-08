@@ -1,0 +1,1 @@
+require('@cypress/xpath'); // Enables the use of xpath selectors in cypress tests

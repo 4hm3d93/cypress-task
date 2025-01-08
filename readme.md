@@ -15,7 +15,7 @@ This repository contains the Cypress test suite for the Loyalty Program web appl
 - [XPath Plugin](#xpath-plugin)
 - [Test Data](#test-data)
 - [Reporting](#reporting)
-- [Contributing](#contributing)
+
 
 ## Prerequisites
 

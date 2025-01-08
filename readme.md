@@ -15,7 +15,7 @@ This repository contains the Cypress test suite for the Loyalty Program web appl
 - [XPath Plugin](#xpath-plugin)
 - [Test Data](#test-data)
 - [Reporting](#reporting)
-- [Contributing](#contributing)
+
 
 ## Prerequisites
 
@@ -81,36 +81,37 @@ Before running the tests, ensure that you have the following installed:
 2.  Select the desired test file from the Cypress Test Runner, and then start the test execution.
 
 ## Project Structure
-
+```
 cypress/
 ├── e2e/
-│ ├── login.cy.js # Test file (for login)
-│ ├── pointsBalance.cy.js # Test file (for points balance)
+│   ├── login.cy.js # Test file for login
+│   ├── pointsBalance.cy.js # Test file for points balance
 │
 ├── support/
-│ ├── commands.js # Custom Cypress commands (if needed)
-│ ├── e2e.js # Plugin configurations
+│   ├── commands.js # Custom Cypress commands (if needed)
+│   ├── e2e.js # Plugin configurations
 │
 ├── pages/
-│ ├── loginPage.js # Login Page Object
-│ ├── homePage.js # HomePage Object
-│ ├── dashboardPage.js # Dashboard Page Object
+│   ├── loginPage.js # Login Page Object
+│   ├── homePage.js # HomePage Object
+│   ├── dashboardPage.js # Dashboard Page Object
 │
 cypress.config.js # Cypress configuration file
 cypress.env.json # environment variables
 .gitignore # to ignore the env file
+```
 
--   **`cypress/e2e`:** Contains your test files (`.cy.js`).
+-   **`cypress/e2e`:** Contains test files (`.cy.js`).
 -   **`cypress/support`:** Contains the files required to configure cypress, and the plugins.
 -   **`cypress/pages`:** Contains the page object classes (`.js`).
--   **`cypress.config.js`**: The main configuration file for your Cypress project.
--   **`cypress.env.json`**: The file used to store the environment variables for your tests.
+-   **`cypress.config.js`**: The main configuration file for this Cypress project.
+-   **`cypress.env.json`**: The file used to store the environment variables used in tests.
 -   **`.gitignore`:** The file used to ignore the `.env` from git commits.
 
 ## Test Cases
 
 -   **`e2e/login.cy.js`:** Contains test cases related to the user login functionality. It tests that the user is redirected to the correct page after a successful login, and that the user profile is properly shown in the homepage.
--   **`e2e/dashboard.cy.js`:** Contains test cases related to the dashboard functionality, verifying if the points balance and the transaction history are being correctly shown on the dashboard.
+-   **`e2e/dashboard.cy.js`:** Contains test cases related to the dashboard functionality, verifying if the points balance and the transaction history are being correctly displayed on the dashboard.
 
 ## Page Objects
 
@@ -140,13 +141,4 @@ cypress.env.json # environment variables
 
 *  After the test execution, Cypress will automatically generate a report with the results, and it can also integrate with other reporting systems if necessary.
 
-## Contributing
 
-If you want to contribute to this project, make sure you are following these guidelines:
-
-1. Create a branch for the feature or the bug that you will be working on.
-2. Create tests for your code.
-3. Make sure that your code follows the best practices.
-4. Commit your code, and add the comments to the commit.
-5. Create a pull request.
-6. Make sure that you are communicating with other members of the team.

@@ -81,11 +81,11 @@ Before running the tests, ensure that you have the following installed:
 2.  Select the desired test file from the Cypress Test Runner, and then start the test execution.
 
 ## Project Structure
-
+```
 cypress/
 ├── e2e/
-│   ├── login.cy.js # Test file (for login)
-│   ├── pointsBalance.cy.js # Test file (for points balance)
+│   ├── login.cy.js # Test file for login
+│   ├── pointsBalance.cy.js # Test file for points balance
 │
 ├── support/
 │   ├── commands.js # Custom Cypress commands (if needed)
@@ -99,6 +99,7 @@ cypress/
 cypress.config.js # Cypress configuration file
 cypress.env.json # environment variables
 .gitignore # to ignore the env file
+```
 
 -   **`cypress/e2e`:** Contains your test files (`.cy.js`).
 -   **`cypress/support`:** Contains the files required to configure cypress, and the plugins.
